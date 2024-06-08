@@ -1,0 +1,130 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images1234.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    scroll-behavior: smooth;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+    animation: slideIn 1s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav a {
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.hero {
+    padding: 100px 20px;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.content {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.content section {
+    padding: 2em 0;
+    border-bottom: 1px solid #444;
+}
+
+.content h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
